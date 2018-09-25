@@ -15,46 +15,33 @@ class App extends Component{
     }
   }
 
-  getNewsData = (cat) =>{
-
+  getNewsData = (category) =>{
     this.setState({isLoaderShown: true});
     const service = new HttpService();
-    console.log(cat)
-    service.getNews(cat, this.state.countryCode)
-            .then(r => {
-              this.setState({news: r, isLoaderShown: false})
-            })
-            .catch(err => {
-              console.log(err);
-              this.setState({isLoaderShown: true});
-            });
+    service.getNews(category, this.state.countryCode)
+            .then(r => {this.setState({news: r, isLoaderShown: false})})
+            .catch(err => {this.setState({isLoaderShown: true})});
   }
 
   getSearchData = (q) => {
     this.setState({isLoaderShown: true});
     const service = new HttpService();
-    console.log(q)
     service.getNewsSearch(q, this.state.countryCode)
-            .then(r => {
-              this.setState({news: r, isLoaderShown: false});
-            })
-            .catch(err => {
-              console.log(err);
-              this.setState({isLoaderShown: false});
-            });
+            .then(r => {this.setState({news: r, isLoaderShown: false})})
+            .catch(err => {this.setState({isLoaderShown: false})});
   }
   
   componentWillMount(){
     this.getNewsData('business');
   }
 
-  handleCategory = (cat) =>{
-    this.getNewsData(cat.target.value);
+  handleCategory = (event) =>{
+    this.getNewsData(event.target.value);
     this.setState({isMenuShown: !this.state.isMenuShown});
   }
 
   handleKeyPress = (event) => {
-    if(event.key == 'Enter'){
+    if(event.key === 'Enter'){
       this.getSearchData(event.target.value);
       this.setState({isMenuShown: !this.state.isMenuShown});
     }
