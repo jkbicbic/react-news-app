@@ -5,10 +5,10 @@ This is a small simple react news app that is powered https://newsapi.org/
 ### Responsive Design (Adobe XD)
 
 Web view
-![Web Design](/news-app-design/Web-1920-1.png)
+![Web Design](https://github.com/jkbicbic/react-news-app/blob/master/news-app-design/Web-1920%E2%80%931.png)
 
 Tablet view with sidebar
-![Tablet Design](/news-app-design/iPad-1.png)
+![Tablet Design](https://github.com/jkbicbic/react-news-app/blob/master/news-app-design/iPad%E2%80%931.png)
 
 without sidebar
 ![Tablet Design](/news-app-design/iPad-2.png)
