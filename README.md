@@ -11,13 +11,13 @@ Tablet view with sidebar
 ![Tablet Design](https://github.com/jkbicbic/react-news-app/blob/master/news-app-design/iPad%E2%80%931.png)
 
 without sidebar
-![Tablet Design](/news-app-design/iPad-2.png)
+![Tablet Design](https://github.com/jkbicbic/react-news-app/blob/master/news-app-design/iPad%E2%80%932.png)
 
 Mobile view with sidebar
-![Mobile Design](/news-app-design/iPhone-6-7-8-2.png)
+![Mobile Design](https://github.com/jkbicbic/react-news-app/blob/master/news-app-design/iPhone-6-7-8%E2%80%931.png)
 
 without sidebar
-![Mobile Design](/news-app-design/iPhone-6-7-8-1.png)
+![Mobile Design](https://github.com/jkbicbic/react-news-app/blob/master/news-app-design/iPhone-6-7-8%E2%80%932.png)
 
 ### Running the app in your local machine
 just enter this command like any other react app
