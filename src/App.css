@@ -146,3 +146,14 @@ body, html {
 @media (max-width: 500px) {
   .nav--mobile {
     width: 50%; } }
+
+.fade-in-up {
+  animation: fade-up .2s ease-in-out; }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
