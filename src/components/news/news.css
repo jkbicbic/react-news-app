@@ -41,6 +41,8 @@
 
 @media (max-width: 500px) {
   .news--mobile {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
     .news--mobile .news__card {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; } }
